@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # Hashmap solution
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         complementMap = dict()
 
@@ -19,7 +20,6 @@ class Solution:
 
 
 # Check if the solution is correct
-
 num = [2, 7, 11, 15]
 target = 9
 solution = Solution()
