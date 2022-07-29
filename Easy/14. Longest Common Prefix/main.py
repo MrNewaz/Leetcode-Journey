@@ -14,5 +14,6 @@ class Solution:
         return res
 
 
+# Test
 x = Solution()
 print(x.longestCommonPrefix(["flower", "flow", "flight"]))
