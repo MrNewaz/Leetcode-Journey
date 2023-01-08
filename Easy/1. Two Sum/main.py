@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    # Hashmap solution
+    # Hashmap solution here
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         complementMap = dict()
 
