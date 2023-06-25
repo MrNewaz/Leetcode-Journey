@@ -3,10 +3,10 @@
  * @return {Function}
  */
 var once = function (fn) {
-  let called = 1
+  let isCalled = false
   return function (...args) {
-    if (called === 1) {
-      called++
+    if (isCalled === false) {
+      isCalled = true
       return fn(...args)
     } else {
       return undefined
