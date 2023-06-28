@@ -5,13 +5,13 @@
  */
 var timeLimit = function (fn, t) {
   return async function (...args) {
-    const orignalPromise = fn(...args)
+    const originalPromise = fn(...args)
 
     const timeoutPromise = new Promise((_, reject) => {
       setTimeout(() => reject('Time Limit Exceeded'), t)
     })
 
-    return Promise.race([orignalPromise, timeoutPromise])
+    return Promise.race([originalPromise, timeoutPromise])
   }
 }
 
