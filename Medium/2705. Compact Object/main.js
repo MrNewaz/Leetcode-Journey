@@ -1,7 +1,7 @@
 /**
  * @param {Object} obj
  * @return {Object}
- */
+ **/
 var compactObject = function (obj) {
   // These three if statements deal with when obj is not an iterable object
   // Steps 1-3 as described above
