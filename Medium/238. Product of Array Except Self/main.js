@@ -3,16 +3,19 @@
  * @return {number[]}
  */
 var productExceptSelf = function (nums) {
-  var output = []
-  var left = 1
-  var right = 1
-  for (var i = nums.length - 1; i >= 0; i--) {
-    output[i] = right
+  let res = []
+  let left = 1
+  let right = 1
+
+  for (let i = 0; i < nums.length; i++) {
+    res[i] = left
+    left *= nums[i]
+  }
+
+  for (let i = nums.length - 1; i >= 0; i--) {
+    res[i] *= right
     right *= nums[i]
   }
-  for (var j = 0; j < nums.length; j++) {
-    output[j] *= left
-    left *= nums[j]
-  }
-  return output
+
+  return res
 }
