@@ -1,4 +1,5 @@
 var MinStack = function () {
+  // create an array to store the values
   this.items = []
 }
 
@@ -25,6 +26,7 @@ MinStack.prototype.pop = function () {
  * @return {number}
  */
 MinStack.prototype.top = function () {
+  // return the last value
   return this.items[this.items.length - 1].value
 }
 
@@ -32,6 +34,7 @@ MinStack.prototype.top = function () {
  * @return {number}
  */
 MinStack.prototype.getMin = function () {
+  // return the last minimum value
   return this.items[this.items.length - 1].min
 }
 
