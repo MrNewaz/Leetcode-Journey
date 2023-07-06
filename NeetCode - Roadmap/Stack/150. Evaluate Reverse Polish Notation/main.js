@@ -43,6 +43,6 @@ var evalRPN = function (tokens) {
     }
   }
 
-  // return the last element in the stack
+  // return the last remaining element in the stack
   return stack[0]
 }
