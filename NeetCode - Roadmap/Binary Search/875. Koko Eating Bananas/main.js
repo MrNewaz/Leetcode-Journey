@@ -35,3 +35,6 @@ var minEatingSpeed = function (piles, h) {
   // Return the result
   return res
 }
+
+// Time Complexity: O(Nlog(max(piles)))
+// Space Complexity: O(1)
